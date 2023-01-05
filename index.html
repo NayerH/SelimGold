@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Selim Gold</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Selim Gold</title>
+</head>
+
+<body style="margin:0px; overflow: hidden;">
+  <script type="application/javascript">
+    function resizeIFrameToFitContent(iFrame) {
+
+      iFrame.width = window.innerWidth;
+      iFrame.height = window.innerHeight;
+    }
+
+    window.addEventListener('DOMContentLoaded', function(e) {
+      var iFrame = document.getElementById('iFrame1');
+      resizeIFrameToFitContent(iFrame);
+    });
+
+    window.addEventListener('resize', function(e) {
+      var iFrame = document.getElementById('iFrame1');
+      resizeIFrameToFitContent(iFrame);
+    });
+  </script>
+  <iframe src="Lectures.pdf" id="iFrame1"></iframe>
+
+</body>
+
 </html>
