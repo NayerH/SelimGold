@@ -1,5 +1,6 @@
 body {
     background-color: black !important;
+    font-family: poppins,helvetica;
 }
 
 .button-container {
@@ -23,7 +24,7 @@ body {
 .black-button {
     color: white;
     border: 2px solid #a1771f;
-    padding: 15px 30px;
+    padding: 10px 40px;
     width: 200px;
     border-radius: 0; /* Make the buttons square */
     cursor: pointer;
